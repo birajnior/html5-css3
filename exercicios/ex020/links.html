@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(212, 69, 69);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgba(0, 152, 253, 0.5);
+        }
+        
+        .especial::before {
+            content: '⇒ ';
+        }
+
+        .especial::after {
+            content: ' ⇐';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/birajnior" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/ubiratanbernardo/" class="especial" target="_blank">LinkedIn</a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=5511970839925&text=Ol%C3%A1!" target="_blank">WhatsApp</a></li>
+    </ul>
+</body>
+</html>

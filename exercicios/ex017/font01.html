@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <style>
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+
+            /*
+            Medidas Absolutas 
+            cm, mm, in(polegada), px, pt, pc
+                     
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+
+            1em = 16px (16px é o tamanho padrão das fontes dos navegadores)
+            */
+
+            font-size: 16px;
+            font-weight: 1em;
+            /* lighter, normal, bold, bolder */
+      
+        }
+
+        h1, h2 {
+          /* Propriedade Shorthand font
+            - font-style -> font-weight -> font-size -> font-family 
+
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+         */
+            
+            font: italic bolder 3em 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates reprehenderit iste ratione non praesentium fuga quam vero maiores expedita excepturi laboriosam possimus deleniti, doloribus odit, reiciendis quasi vitae in est! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime facilis quod, voluptatem nulla tenetur suscipit adipisci, dolor dolore alias aspernatur qui recusandae molestias sint est ab vel et illum ratione.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus odit dolorum tempore recusandae commodi dolorem repellendus eius ratione rerum! Sequi architecto praesentium aperiam obcaecati consequatur sapiente quae dolores consectetur asperiores!</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati non velit minima voluptatum saepe quos ratione praesentium repellat repellendus quaerat impedit aliquam qui iure perspiciatis consequatur ducimus, nostrum ut amet?</p>
+</body>
+</html>
